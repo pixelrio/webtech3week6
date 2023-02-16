@@ -157,3 +157,135 @@
     height: 100%;
   }
 }
+
+.features {
+  background: #002ed0;
+  color: #fff;
+  position: relative;
+}
+
+.features__container {
+  background: #000;
+  padding-top: 100px;
+  padding-bottom: 100px;
+  padding-left: 60px;
+}
+
+.features__grid {
+  display: grid;
+  grid-template-columns: 2fr 1fr;
+  grid-template-rows: 700px;
+}
+
+.features__container h1 {
+  font-size: 50px;
+}
+
+.features__left {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  padding: 0 50px;
+}
+
+.features__content {
+  display: flex;
+  align-items: flex-start;
+}
+
+.features__content img {
+  width: 100px;
+  margin-right: 50px;
+}
+
+.features__desc h2 {
+  font-size: 16px;
+  text-transform: uppercase;
+  margin-bottom: 16px;
+}
+
+.features__desc p {
+  line-height: 2;
+}
+
+.features__right img {
+  height: 400px;
+  width: 100%;
+}
+
+.yellow__bar {
+  position: absolute;
+  background: yellow;
+  height: 80px;
+  bottom: -40px;
+  right: 0;
+  width: 80%;
+  color: #000;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+}
+
+.yellow__bar img {
+  margin: 0 40px;
+}
+
+.yellow__bar p {
+  margin-right: 40px;
+  font-weight: 700;
+  text-transform: uppercase;
+}
+
+/* Media Queries */
+@media screen and (max-width: 768px) {
+  .features__grid {
+    grid-template-columns: 1fr;
+  }
+
+  .macbook {
+    display: none;
+  }
+
+  .yellow__bar {
+    width: 100%;
+    justify-content: flex-start;
+  }
+}
+
+@media screen and (max-width: 468px) {
+  .features__container {
+    padding-top: 100px;
+    padding-bottom: 160px;
+    padding-left: 16px;
+  }
+
+  .features__grid {
+    grid-template-columns: 1fr;
+    grid-template-rows: 900px;
+  }
+
+  .features__container h1 {
+    text-align: center;
+    margin-bottom: 100px;
+  }
+
+  .features__left {
+    padding: 0 24px;
+  }
+
+  .features__content {
+    margin-top: 40px;
+  }
+
+  .features__content img {
+    margin-right: 16px;
+  }
+
+  .yellow__bar img {
+    margin: 0 20px;
+  }
+
+  .yellow__bar p {
+    margin-right: 20px;
+  }
+}
